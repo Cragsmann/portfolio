@@ -10,7 +10,17 @@ const Contact = lazy(() => import('./pages/Contact'));
 const Skills = lazy(() => import('./pages/Skills'));
 
 function App() {
-  console.log('App component rendered');
+  const imagesToPreload = [
+    '/assets/images/selfie.webp',
+    '/assets/images/nebula_desktop.webp',
+    '/assets/images/nebula_mobile.png',
+  ];
+
+  imagesToPreload.forEach((imageSrc) => {
+    const img = new Image();
+    img.src = imageSrc;
+  });
+
   return (
     <>
       <Suspense fallback={<div>Loading...</div>}>

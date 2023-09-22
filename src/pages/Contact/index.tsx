@@ -1,31 +1,12 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
 import './index.scss';
+import { useImageSrc } from '../../context/ImageSrcContext';
 
 const Contact: React.FC = () => {
+  const imageSrc = useImageSrc();
   // const [letterClass, setLetterClass] = useState<string>('text-animate');
   const form = useRef<HTMLFormElement>(null);
-  const [imageSrc, setImageSrc] = useState(
-    '/assets/images/nebula_desktop.webp'
-  );
-
-  const handleResize = () => {
-    if (window.innerWidth <= 1200) {
-      setImageSrc('/assets/images/nebula_mobile.png');
-    } else if (window.innerWidth >= 1200) {
-      setImageSrc('/assets/images/nebula_desktop.webp');
-    }
-  };
-
-  useEffect(() => {
-    handleResize();
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
