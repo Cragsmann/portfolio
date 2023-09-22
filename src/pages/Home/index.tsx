@@ -36,6 +36,17 @@ const Home = () => {
       );
   }, []);
 
+  const imagesToPreload = [
+    '/assets/images/selfie.webp',
+    '/assets/images/nebula_desktop.webp',
+    '/assets/images/nebula_mobile.png',
+  ];
+
+  imagesToPreload.forEach((imageSrc) => {
+    const img = new Image();
+    img.src = imageSrc;
+  });
+
   return (
     <div className="home-page">
       <div className="container-homepage">
