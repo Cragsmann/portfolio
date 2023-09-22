@@ -7,14 +7,14 @@ const Contact: React.FC = () => {
   // const [letterClass, setLetterClass] = useState<string>('text-animate');
   const form = useRef<HTMLFormElement>(null);
   const [imageSrc, setImageSrc] = useState(
-    'src/assets/images/nebula_desktop.webp'
+    '/assets/images/nebula_desktop.webp'
   );
 
   const handleResize = () => {
     if (window.innerWidth <= 1200) {
-      setImageSrc('src/assets/images/nebula_mobile.png');
+      setImageSrc('/assets/images/nebula_mobile.png');
     } else if (window.innerWidth >= 1200) {
-      setImageSrc('src/assets/images/nebula_desktop.webp');
+      setImageSrc('/assets/images/nebula_desktop.webp');
     }
   };
 

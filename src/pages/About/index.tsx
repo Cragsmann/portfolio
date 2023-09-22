@@ -18,7 +18,7 @@ const About: React.FC = () => {
       title: 'family',
     },
     {
-      imgSrc: '/assets/images/repiska.webp',
+      imgSrc: '/assets/images/Repiska.webp',
       title: 'climbing in repiska',
     },
 

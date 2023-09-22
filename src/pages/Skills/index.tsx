@@ -5,74 +5,74 @@ import './index.scss';
 function Skills() {
   const logos = [
     {
-      logoSrc: 'src/assets/skills/html5.webp',
+      logoSrc: '/assets/skills/html5.webp',
       tooltip: 'HTML5',
     },
     {
-      logoSrc: 'src/assets/skills/css3.webp',
+      logoSrc: '/assets/skills/css3.webp',
       tooltip: 'CSS3',
     },
     {
-      logoSrc: 'src/assets/skills/sass.webp',
+      logoSrc: '/assets/skills/sass.webp',
       tooltip: 'Sass',
     },
     {
-      logoSrc: 'src/assets/skills/tailwind.webp',
+      logoSrc: '/assets/skills/tailwind.webp',
       classname: 'small',
       tooltip: 'Tailwind CSS',
     },
     {
-      logoSrc: 'src/assets/skills/js.webp',
+      logoSrc: '/assets/skills/js.webp',
       classname: 'small',
       tooltip: 'JavaScript',
     },
     {
-      logoSrc: 'src/assets/skills/ts.webp',
+      logoSrc: '/assets/skills/ts.webp',
       classname: 'small',
       tooltip: 'TypeScript',
     },
     {
-      logoSrc: 'src/assets/skills/nodeJS.webp',
+      logoSrc: '/assets/skills/nodeJS.webp',
       classname: 'small',
       tooltip: 'Node.js',
     },
     {
-      logoSrc: 'src/assets/skills/Jest.webp',
+      logoSrc: '/assets/skills/Jest.webp',
       classname: 'small',
       tooltip: 'Jest',
     },
     {
-      logoSrc: 'src/assets/skills/react.webp',
+      logoSrc: '/assets/skills/react.webp',
       tooltip: 'React',
     },
     {
-      logoSrc: 'src/assets/skills/reactQuery.webp',
+      logoSrc: '/assets/skills/reactQuery.webp',
       tooltip: 'TanStack Query',
     },
     {
-      logoSrc: 'src/assets/skills/redux.webp',
+      logoSrc: '/assets/skills/redux.webp',
       tooltip: 'Redux',
     },
     {
-      logoSrc: 'src/assets/skills/redis.webp',
+      logoSrc: '/assets/skills/redis.webp',
       classname: 'small',
       tooltip: 'Redis',
     },
     {
-      logoSrc: 'src/assets/skills/git.webp',
+      logoSrc: '/assets/skills/git.webp',
       tooltip: 'Git',
     },
     {
-      logoSrc: 'src/assets/skills/docker.webp',
+      logoSrc: '/assets/skills/docker.webp',
       tooltip: 'Docker',
     },
     {
-      logoSrc: 'src/assets/skills/gpt.webp',
+      logoSrc: '/assets/skills/gpt.webp',
       classname: 'small',
       tooltip: 'GPT',
     },
     {
-      logoSrc: 'src/assets/images/RL_fill.svg',
+      logoSrc: '/assets/images/RL_fill.svg',
       classname: 'small',
       tooltip: 'RobertLuby.stack',
     },
