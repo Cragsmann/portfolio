@@ -48,7 +48,7 @@
       margin-top: 15rem;
     }
     .contact-h2 {
-      font-size: 2.8rem;
+      font-size: 2.4rem;
       color: #fff;
       font-weight: 400;
       margin-top: 0.5rem;
@@ -78,7 +78,7 @@
 
         li.half {
           width: 49%;
-          margin-left: 1rem;
+          margin-left: 2%;
           float: left;
           clear: none;
 
@@ -164,6 +164,22 @@
       }
     }
   }
+  .contact-footer {
+    position: absolute;
+    bottom: 0;
+    height: 3rem;
+    width: 100%;
+    background-color: #181818;
+    z-index: -2;
+    display: flex;
+    align-items: center;
+    p {
+      margin-left: 10rem;
+      font-size: 1.3rem;
+      color: #ffa816;
+      animation: showUp 3s ease-in-out;
+    }
+  }
 }
 
 @media screen and (max-width: 75em) {
@@ -173,12 +189,16 @@
     align-items: start;
 
     .contact-container {
-      width: 100%;
-      margin: 10rem;
       position: relative;
+      width: 100%;
+      margin-top: 5rem;
+      margin-right: 10rem;
 
       .contact-h1 {
         margin-top: 0;
+      }
+      .contact-h2 {
+        font-size: 2.4rem;
       }
 
       .contact-form {
@@ -196,7 +216,6 @@
         }
       }
     }
-
     .contact-image {
       height: 90%;
       width: 105%;
@@ -210,9 +229,12 @@
         height: 100%;
       }
     }
+    .contact-footer {
+      z-index: 1;
+      bottom: 3rem;
+    }
   }
 }
-
 @media (min-width: 175em) {
   .contact-page {
     .contact-container {

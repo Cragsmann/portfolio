@@ -10,19 +10,18 @@ const About: React.FC = () => {
       title: 'climbing selfie in alps',
     },
     {
-      imgSrc: 'src/assets/images/repiska.webp',
-      title: 'climbing in repiska',
+      imgSrc: 'src/assets/images/boulder_tatry.webp',
+      title: 'bouldering in High tatras',
     },
-
     {
       imgSrc: 'src/assets/images/family.webp',
       title: 'family',
     },
-
     {
-      imgSrc: 'src/assets/images/boulder_tatry.webp',
-      title: 'bouldering in High tatras',
+      imgSrc: 'src/assets/images/repiska.webp',
+      title: 'climbing in repiska',
     },
+
     {
       imgSrc: 'src/assets/images/sunset.jpg',
       title: 'watching sunset',

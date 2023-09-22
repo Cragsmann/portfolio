@@ -44,7 +44,17 @@
     .text-js {
       opacity: 0;
     }
-
+    .cursor {
+      display: block;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      right: -5px;
+      width: 2px;
+      background-color: white;
+      z-index: 1;
+      animation: flash 1.5s none infinite alternate;
+    }
     .invisible {
       opacity: 0;
     }

@@ -45,6 +45,9 @@ body {
 @media (max-width: 78em) {
   html {
     font-size: 56%;
+    .page {
+      margin-top: 8rem;
+    }
   }
 }
 
@@ -75,7 +78,7 @@ body {
     font-size: 32%;
   }
 }
-@media (max-width: 21em) {
+@media (max-width: 22em) {
   html {
     font-size: 28%;
   }
