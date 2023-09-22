@@ -1,0 +1,236 @@
+.home-page {
+  // @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap);
+  // @import url(https://fonts.googleapis.com/css?family=Raleway:400,800,900);
+
+  .container-homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    height: 90vh;
+    width: 100%;
+    margin-bottom: 5rem;
+
+    .top-margin {
+      height: 15rem;
+      display: block;
+    }
+
+    .hello-world {
+      color: #ffa816;
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+      font-weight: 400;
+      font-size: 5rem;
+      letter-spacing: 0.3rem;
+      animation: pulse 1.3s forwards;
+      text-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
+    }
+
+    .heading {
+      font-family: 'Inter', sans-serif;
+      font-size: 10rem;
+      display: inline;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: #fff;
+      animation: gradientChange 10s infinite;
+      text-shadow: 0 0 5px rgba(255, 170, 22, 0.6), 0 0 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .text-js {
+      opacity: 0;
+    }
+
+    .invisible {
+      opacity: 0;
+    }
+
+    .subheading {
+      position: relative;
+      font-family: 'Inter', sans-serif;
+      font-size: 3rem;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        background: white;
+        width: 0.2rem;
+        margin: auto 0;
+        top: 0.5rem;
+        bottom: 0;
+      }
+
+      &::before {
+        left: 50%;
+        animation: leftSlide 1s cubic-bezier(0.68, -0.55, 0.265, 1.5) forwards;
+      }
+
+      &::after {
+        animation: rightSlide 1s cubic-bezier(0.68, -0.55, 0.265, 1.5) forwards;
+      }
+
+      span {
+        letter-spacing: 3px;
+        font-weight: 300;
+        display: inline-block;
+        opacity: 0;
+        text-transform: uppercase;
+        animation-iteration-count: 1;
+        animation: fadeIn forwards 0.8s ease-out;
+      }
+
+      @for $i from 1 through 9 {
+        span:nth-child(#{$i}) {
+          animation-delay: ((9 - $i) * 0.1s) + 0.4s;
+        }
+      }
+      @for $i from 0 through 9 {
+        span:nth-child(#{($i + 9)}) {
+          animation-delay: (($i) * 0.1s) + 0.4s;
+        }
+      }
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      transform: scale(0.2);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes leftSlide {
+    0% {
+      opacity: 0;
+      left: 50%;
+      height: 5%;
+    }
+    100% {
+      opacity: 1;
+      left: -6%;
+      height: 75%;
+    }
+  }
+
+  @keyframes rightSlide {
+    0% {
+      opacity: 0;
+      right: 50%;
+      height: 5%;
+    }
+    100% {
+      opacity: 1;
+      right: -6%;
+      height: 75%;
+    }
+  }
+
+  .container-homepage-btns {
+    display: flex;
+    gap: 5rem;
+    position: absolute;
+    top: 53rem;
+    height: fit-content;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 3.5s;
+    opacity: 0;
+  }
+
+  .flat-button-info {
+    display: flex;
+    width: 20.5rem;
+    justify-content: center;
+    align-items: center;
+    color: #ffa816;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.721);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    border: 0.2rem solid #ffa816;
+    border-radius: 0.8rem;
+    padding: 1.5rem 0rem;
+
+    white-space: nowrap;
+
+    &:hover,
+    :active {
+      background: #e89402;
+      border: 0.2rem solid #e89402;
+      color: #020d20;
+    }
+  }
+
+  .flat-button-contact {
+    display: flex;
+    width: 20.5rem;
+    justify-content: center;
+    align-items: center;
+    background: #ffa816;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.721);
+    color: #020d20;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    border: 0.2rem solid #ffa816;
+    border-radius: 0.8rem; /* 4px divided by 10 and converted to rem */
+    padding: 1.5rem 0rem; /* 10px divided by 10 and converted to rem */
+
+    text-decoration: none;
+    &:hover,
+    :active {
+      background: #e89402;
+      border: 0.2rem solid #e89402;
+      color: #020d20;
+    }
+  }
+}
+
+@media screen and (min-width: 35em) {
+  .home-page {
+    .container-homepage {
+      .heading {
+        font-size: 9rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 35em) {
+  .home-page {
+    .container-homepage {
+      .heading {
+        font-size: 9rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 31em) {
+  .home-page {
+    .container-homepage {
+      .heading {
+        font-size: 8rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 24em) {
+  .home-page {
+    .container-homepage {
+      .heading {
+        font-size: 7rem;
+      }
+    }
+  }
+}

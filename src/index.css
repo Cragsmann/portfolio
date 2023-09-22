@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+/* //#1f3f76; */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #d1d1d1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(45deg, #153771, #020d20);
+  overflow: hidden;
+}
+
+@media (min-width: 175em) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 175em) and (min-width: 150em) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (max-width: 150em) and (min-width: 130em) {
+  html {
+    font-size: 72%;
+  }
+}
+
+@media (max-width: 78em) {
+  html {
+    font-size: 56%;
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 44em) {
+  html {
+    font-size: 44%;
+  }
+}
+
+@media (max-width: 39em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 30em) {
+  html {
+    font-size: 36%;
+  }
+}
+@media (max-width: 25em) {
+  html {
+    font-size: 32%;
+  }
+}
+@media (max-width: 21em) {
+  html {
+    font-size: 28%;
+  }
+}
