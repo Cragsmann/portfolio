@@ -6,41 +6,41 @@ import './index.scss';
 const About: React.FC = () => {
   const CARDS = [
     {
-      imgSrc: 'src/assets/images/selfie.webp',
+      imgSrc: 'assets/images/selfie.webp',
       title: 'climbing selfie in alps',
     },
     {
-      imgSrc: 'src/assets/images/boulder_tatry.webp',
+      imgSrc: 'assets/images/boulder_tatry.webp',
       title: 'bouldering in High tatras',
     },
     {
-      imgSrc: 'src/assets/images/family.webp',
+      imgSrc: 'assets/images/family.webp',
       title: 'family',
     },
     {
-      imgSrc: 'src/assets/images/repiska.webp',
+      imgSrc: 'assets/images/repiska.webp',
       title: 'climbing in repiska',
     },
 
     {
-      imgSrc: 'src/assets/images/sunset.jpg',
+      imgSrc: 'assets/images/sunset.jpg',
       title: 'watching sunset',
     },
 
     {
-      imgSrc: 'src/assets/images/summit.webp',
+      imgSrc: 'assets/images/summit.webp',
       title: 'summit in alps',
     },
     {
-      imgSrc: 'src/assets/images/boulder_ME.webp',
+      imgSrc: 'assets/images/boulder_ME.webp',
       title: 'European championship boulder',
     },
     // {
-    //   imgSrc: 'src/assets/images/boulder_Himalayas.webp',
+    //   imgSrc: 'assets/images/boulder_Himalayas.webp',
     //   title: 'bouldering in Himalayas',
     // },
     {
-      imgSrc: 'src/assets/images/skialp.webp',
+      imgSrc: 'assets/images/skialp.webp',
       title: 'skitouring with daugther',
     },
   ];
