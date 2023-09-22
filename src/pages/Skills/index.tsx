@@ -37,7 +37,7 @@ function Skills() {
       tooltip: 'Node.js',
     },
     {
-      logoSrc: '/assets/skills/Jest.webp',
+      logoSrc: '/assets/skills/jest.webp',
       classname: 'small',
       tooltip: 'Jest',
     },
@@ -72,7 +72,7 @@ function Skills() {
       tooltip: 'GPT',
     },
     {
-      logoSrc: '/assets/images/RL_fill.svg',
+      logoSrc: '/assets/images/RL_Fill.svg',
       classname: 'small',
       tooltip: 'RobertLuby.stack',
     },
