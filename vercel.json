@@ -1,0 +1,24 @@
+{
+  "routes": [
+    {
+      "src": "^/$",
+      "dest": "/index.html"
+    },
+    {
+      "src": "^/about$",
+      "dest": "/index.html"
+    },
+    {
+      "src": "^/contact$",
+      "dest": "/index.html"
+    },
+    {
+      "src": "^/skills$",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/.*",
+      "dest": "/index.html"
+    }
+  ]
+}
