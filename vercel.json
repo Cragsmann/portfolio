@@ -1,32 +1,3 @@
 {
-  "routes": [
-    {
-      "src": "/(.*\\.js)$",
-      "headers": { "Content-Type": "application/javascript" }
-    },
-    {
-      "src": "/(.*\\.css)$",
-      "headers": { "Content-Type": "text/css" }
-    },
-    {
-      "src": "^/$",
-      "dest": "/index.html"
-    },
-    {
-      "src": "^/about$",
-      "dest": "/index.html"
-    },
-    {
-      "src": "^/contact$",
-      "dest": "/index.html"
-    },
-    {
-      "src": "^/skills$",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/.*",
-      "dest": "/index.html"
-    }
-  ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
