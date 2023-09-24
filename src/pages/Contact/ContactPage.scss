@@ -44,14 +44,15 @@
     .contact-h1 {
       font-size: 5.3rem;
       color: #ffa816;
-      font-weight: 400;
+      font-weight: 600;
       margin-top: 15rem;
     }
     .contact-h2 {
-      font-size: 2.4rem;
+      font-size: 2.2rem;
       color: #fff;
-      font-weight: 400;
+      font-weight: 500;
       margin-top: 0.5rem;
+      letter-spacing: 0.05rem;
     }
     .contact-form {
       width: 100%;
@@ -77,8 +78,8 @@
         }
 
         li.half {
-          width: 49%;
-          margin-left: 2%;
+          width: 49.3%;
+          margin-left: 1.4%;
           float: left;
           clear: none;
 
@@ -177,7 +178,7 @@
       margin-left: 10rem;
       font-size: 1.3rem;
       color: #ffa816;
-      animation: showUp 3s ease-in-out;
+      // animation: showUp 3s ease-in-out;
     }
   }
 }
@@ -231,7 +232,10 @@
     }
     .contact-footer {
       z-index: 1;
-      bottom: 3rem;
+      position: absolute;
+      bottom: 0;
+      transform: translateY(-50%);
+      letter-spacing: 0.1rem;
     }
   }
 }

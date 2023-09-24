@@ -157,10 +157,10 @@ $card-size: 60rem;
     .about-container {
       display: flex;
       flex-direction: column;
-
       gap: 5rem;
       justify-content: start;
       grid-template-rows: auto;
+      overflow-y: auto;
       max-height: 100vh;
       padding: 0;
 

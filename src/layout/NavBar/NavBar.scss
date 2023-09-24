@@ -174,8 +174,7 @@
   .nav-bar {
     background: transparent;
     position: initial;
-    height: auto;
-    min-height: auto;
+    height: 0;
 
     .logo {
       display: inline-block;
