@@ -7,18 +7,15 @@
   top: 0;
   z-index: 3;
   display: flex;
-  // min-width: 100px;
+  align-items: center;
 
   .logo {
-    display: inline-block;
-    padding: 0.8rem;
-
-    .logoRL {
-      display: block;
-      margin: 0.2rem 2rem;
-      width: 4rem;
-      height: 4rem;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2rem;
+    width: 4rem;
+    height: 4rem;
   }
 
   nav {
@@ -130,7 +127,6 @@
   ul {
     position: absolute;
     display: flex;
-    transform: translateY(50%);
     right: 3rem; /* Adjust position as needed */
     list-style: none;
     align-items: center;
@@ -177,19 +173,14 @@
     height: 0;
 
     .logo {
-      display: inline-block;
       padding: 0.8rem;
-
-      .logoRL {
-        width: 5rem;
-        height: 5rem;
-        position: absolute;
-        padding: 0;
-        top: 2rem;
-        left: 1rem;
-        display: block;
-        fill: #ffa816;
-      }
+      width: 5rem;
+      height: 5rem;
+      position: absolute;
+      padding: 0;
+      top: 2rem;
+      left: 1rem;
+      display: block;
     }
 
     ul,

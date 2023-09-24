@@ -1,0 +1,102 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loading-animation {
+    .loading-animation__path1 {
+      stroke: #ffa816;
+      stroke-width: 20;
+      fill: none;
+      stroke-dasharray: 2979.85693359375;
+      stroke-dashoffset: 2979.85693359375;
+      animation: stroke1 2s forwards, fill-animation-orange 3s forwards;
+    }
+    .loading-animation__path2 {
+      stroke: #ffa816;
+      stroke-width: 20;
+      fill: none;
+      stroke-dasharray: 809.8240356445312;
+      stroke-dashoffset: 809.8240356445312;
+      animation: stroke2 2s forwards, fill-animation-black 3s forwards;
+    }
+
+    .loading-animation__path3 {
+      stroke: #ffa816;
+      stroke-width: 20;
+      fill: none;
+      stroke-dasharray: 2316.76025390625;
+      stroke-dashoffset: 2316.76025390625;
+      animation: stroke3 2s forwards, fill-animation-orange 3s forwards;
+    }
+
+    @keyframes fill-animation-orange {
+      0% {
+        fill: none;
+      }
+      50% {
+        fill: #181818;
+      }
+      100% {
+        fill: #ffa816;
+      }
+    }
+    @keyframes fill-animation-black {
+      0% {
+        fill: none;
+      }
+      100% {
+        fill: #181818;
+      }
+    }
+    @keyframes stroke1 {
+      0% {
+        stroke-dashoffset: 2979.85693359375;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes stroke2 {
+      0% {
+        stroke-dashoffset: 809.8240356445312;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes stroke3 {
+      0% {
+        stroke-dashoffset: 2316.76025390625;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 75em) {
+  @keyframes fill-animation-orange {
+    0% {
+      fill: none;
+    }
+    50% {
+      fill: #102c5a;
+    }
+    100% {
+      fill: #ffa816;
+    }
+  }
+  @keyframes fill-animation-black {
+    0% {
+      fill: none;
+    }
+    100% {
+      fill: #102c5a;
+    }
+  }
+}

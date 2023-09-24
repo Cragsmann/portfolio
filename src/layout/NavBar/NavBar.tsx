@@ -1,8 +1,8 @@
 import './NavBar.scss';
 import { useState } from 'react';
-import LogoRL from '../../assets/images/RL_Fill.svg';
 
 import { Link, NavLink } from 'react-router-dom';
+import AnimatedLogo from './components/AnimatedLogo';
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <div className="nav-bar">
       <Link className="logo" to="/" onClick={() => setShowNav(false)}>
-        <img src={LogoRL} alt="LogoRL" className="logoRL" />
+        <AnimatedLogo />
       </Link>
       <nav className={navClass}>
         <NavLink end to="/" onClick={() => setShowNav(false)}>
