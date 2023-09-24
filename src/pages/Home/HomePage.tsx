@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './index.scss';
-import { autoType } from '../../components/AutoType';
+import './HomePage.scss';
+import { autoType } from './components/AutoType';
 
 const Home = () => {
   const [isResolved, setIsResolved] = useState(false);

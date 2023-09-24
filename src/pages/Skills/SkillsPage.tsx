@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { LogoGrid } from '../../components/LogoGrid';
-import './index.scss';
+import { LogoGrid } from './components/LogoGrid';
+import './SkillsPage.scss';
 
 function Skills() {
   const logos = [
@@ -81,7 +81,7 @@ function Skills() {
   const hardSkills = [
     'User-Centric Web Development',
     'JS Framework Expertise',
-    'Dev Tools Proficiency',
+    'CSStyling to perfection',
     'Clean Code Advocate',
     'Modern Tech Stack',
     'Test Coding Skills',

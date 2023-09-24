@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import './index.scss';
+import './ContactPage.scss';
 import { useImageSrc } from '../../context/ImageSrcContext';
 
 const Contact: React.FC = () => {

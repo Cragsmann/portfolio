@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
-import Navbar from '../NavBar';
-import './index.scss';
+import Navbar from '../NavBar/NavBar';
+import './Layout.scss';
 import { useEffect, useState } from 'react';
 import ImageSrcContext from '../../context/ImageSrcContext';
 

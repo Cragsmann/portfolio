@@ -1,7 +1,7 @@
 import React from 'react';
-import { Carousel, Card } from '../../components/Carousel';
+import { Carousel, Card } from './components/Carousel';
 import { Link } from 'react-router-dom';
-import './index.scss';
+import './AboutPage.scss';
 
 const About: React.FC = () => {
   const CARDS = [

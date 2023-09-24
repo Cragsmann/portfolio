@@ -1,4 +1,4 @@
-import './index.scss';
+import './NotFoundPage.scss';
 
 function Notfound() {
   return (

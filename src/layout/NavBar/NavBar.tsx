@@ -1,4 +1,4 @@
-import './index.scss';
+import './NavBar.scss';
 import { useState } from 'react';
 import LogoRL from '../../assets/images/RL_Fill.svg';
 
