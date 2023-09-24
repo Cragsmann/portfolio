@@ -1,6 +1,10 @@
 {
   "routes": [
     {
+      "src": "/(.*\\.(js|ts))$",
+      "headers": { "Content-Type": "application/javascript" }
+    },
+    {
       "src": "^/$",
       "dest": "/index.html"
     },
