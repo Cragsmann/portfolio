@@ -1,5 +1,5 @@
 import { FC, ReactNode, useRef } from 'react';
-import '../styles/tooltip.scss';
+import './tooltip.scss';
 
 interface Props {
   children: ReactNode;

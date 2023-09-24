@@ -1,5 +1,5 @@
 import React from 'react';
-import '../pages/Skills/index.scss';
+import '../SkillsPage.scss';
 import ToolTip from './Tooltip';
 
 type LogoGridProps = {
