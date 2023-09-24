@@ -10,6 +10,7 @@ $card-size: 60rem;
   overflow-y: auto;
 
   .about-container {
+    overflow-x: hidden;
     display: flex;
     gap: 25rem;
     align-items: center;
@@ -175,7 +176,7 @@ $card-size: 60rem;
       }
 
       .carousel-container {
-        margin-bottom: 10rem;
+        margin-bottom: 13rem;
       }
     }
   }

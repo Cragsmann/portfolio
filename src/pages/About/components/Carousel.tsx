@@ -35,7 +35,7 @@ export const Carousel: React.FC<CarouselProps> = ({ children }) => {
     const touchEndX = e.touches[0].clientX;
     const diffX = touchStartX.current - touchEndX;
 
-    if (Math.abs(diffX) > 100) {
+    if (Math.abs(diffX) > 50) {
       // Threshold
       if (diffX > 0 && active < count - 1) {
         setActive((prev) => prev + 1);
