@@ -80,8 +80,8 @@ function Skills() {
 
   const hardSkills = [
     'User-Centric Web Development',
-    'JS Framework Expertise',
-    'CSStyling to perfection',
+    'React Framework Expertise',
+    'Fine-Tuned CSS Styling',
     'Clean Code Advocate',
     'Modern Tech Stack',
     'Test Coding Skills',
@@ -90,11 +90,11 @@ function Skills() {
   const softSkills = [
     'Excellent Team Collaboration',
     'Problem Solving Passion',
-    'Remote Work Capability',
-    'Attention to Details',
+    'Emotional Intelligence',
+    'Attention to Detail',
     'Adaptive Learning',
-    'Great Enthusiasm',
-    'Communication',
+    'Positive Attitude',
+    'Creative Mindset',
   ];
 
   const [skills, setSkills] = useState(hardSkills);
