@@ -6,13 +6,33 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
+  const [closeNavAnimation, setCloseNavAnimation] = useState(false);
+
+  const closeMobileNav = () => {
+    setCloseNavAnimation(true);
+
+    setTimeout(() => {
+      setCloseNavAnimation(false);
+      setShowNav(false);
+    }, 500);
+  };
+
+  let navClass = '';
+
+  if (showNav) {
+    navClass = 'mobile-nav-open';
+  }
+
+  if (closeNavAnimation && showNav) {
+    navClass = 'mobile-nav-close';
+  }
 
   return (
     <div className="nav-bar">
       <Link className="logo" to="/" onClick={() => setShowNav(false)}>
         <img src={LogoRL} alt="LogoRL" className="logoRL" />
       </Link>
-      <nav className={showNav ? 'mobile-nav-open' : 'mobile-nav-close'}>
+      <nav className={navClass}>
         <NavLink end to="/" onClick={() => setShowNav(false)}>
           <svg
             className="nav-icon"
@@ -138,7 +158,7 @@ const Navbar = () => {
         <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
       </svg>
       <svg
-        onClick={() => setShowNav(false)}
+        onClick={() => closeMobileNav()}
         className={showNav ? 'close-icon' : 'close-icon invisible'}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 384 512"

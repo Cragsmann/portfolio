@@ -15,12 +15,11 @@ type LogoGridProps = {
 export const LogoGrid: React.FC<LogoGridProps> = (props) => {
   const { logos } = props;
 
-  const content = logos.map((logo, index) => {
+  const content = logos.map((logo) => {
     return (
-      <ToolTip tooltip={logo.tooltip}>
+      <ToolTip tooltip={logo.tooltip} key={logo.tooltip}>
         <div
           className="logo-tab"
-          key={index}
           onMouseEnter={() => logo.onHover?.()}
           onMouseLeave={() => logo.onHoverOut?.()}
         >

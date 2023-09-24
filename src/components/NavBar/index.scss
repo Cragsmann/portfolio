@@ -220,9 +220,24 @@
         }
       }
 
-      &.mobile-show {
+      &.mobile-nav-open {
         display: flex;
         flex-direction: column;
+      }
+
+      &.mobile-nav-close {
+        display: flex;
+        flex-direction: column;
+        animation: slideOutToTop 0.5s ease-in-out forwards;
+
+        @keyframes slideOutToTop {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(-100%);
+          }
+        }
       }
 
       a {
