@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from 'react';
+import React, { ReactNode, useState, useRef } from 'react';
 
 const MAX_VISIBILITY = 3;
 
@@ -23,11 +23,34 @@ type CarouselProps = {
 };
 
 export const Carousel: React.FC<CarouselProps> = ({ children }) => {
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState<number>(0);
+  const touchStartX = useRef<number>(0);
   const count = React.Children.count(children);
 
+  const onTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const onTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    const touchEndX = e.touches[0].clientX;
+    const diffX = touchStartX.current - touchEndX;
+
+    if (Math.abs(diffX) > 100) {
+      // Threshold
+      if (diffX > 0 && active < count - 1) {
+        setActive((prev) => prev + 1);
+      } else if (diffX < 0 && active > 0) {
+        setActive((prev) => prev - 1);
+      }
+      touchStartX.current = touchEndX; // Reset for the next onTouchMove event
+    }
+  };
   return (
-    <div className="carousel">
+    <div
+      className="carousel"
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
+    >
       {active > 0 && (
         <button
           className="left carousel-nav"
