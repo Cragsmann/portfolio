@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router-dom';
 import './styles/App.scss';
 import Layout from './layout/Layout/Layout';
 import Notfound from './pages/NotFound/NotFoundPage';
-import Loader from './layout/Loader/Loader';
 
 const Home = lazy(() => import('./pages/Home/HomePage'));
 const About = lazy(() => import('./pages/About/AbouPaget'));
@@ -13,7 +12,7 @@ const Skills = lazy(() => import('./pages/Skills/SkillsPage'));
 function App() {
   return (
     <>
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={<Layout />}>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
