@@ -148,7 +148,6 @@
         background: 0 0;
         text-transform: uppercase;
         background-color: #181818;
-
         text-align: center;
         margin-right: 1rem;
 
@@ -169,12 +168,11 @@
     z-index: -2;
     display: flex;
     align-items: center;
-    animation: fadeIn 1s forwards;
+    animation: showUp 3s ease-in-out;
     p {
       margin-left: 10rem;
       font-size: 1.3rem;
       color: #ffa816;
-      // animation: showUp 3s ease-in-out;
     }
   }
 }

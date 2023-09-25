@@ -85,7 +85,7 @@ function Skills() {
     'Clean Code Advocate',
     'Modern Tech Stack',
     'Test Coding Skills',
-    'Microservices',
+    'Microfrontends',
   ];
   const softSkills = [
     'Excellent Team Collaboration',
