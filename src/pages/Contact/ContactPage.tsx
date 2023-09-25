@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
           <img id="responsive-image" src={imageSrc} alt="nebula" />
         </div>
         <div className="contact-footer">
-          <p>Copyright © 2023 &nbsp; &nbsp;&nbsp;Robert Luby</p>
+          <p>Copyright © 2023 &nbsp;&nbsp;&nbsp; Robert Luby</p>
         </div>
       </div>
     </>
