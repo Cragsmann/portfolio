@@ -18,6 +18,7 @@ function AnimatedLogo() {
   return (
     <div className="wrapper" onClick={handleClick}>
       <svg
+        aria-label="logo-RL"
         ref={svgRef}
         className="loading-animation"
         xmlns="http://www.w3.org/2000/svg"
