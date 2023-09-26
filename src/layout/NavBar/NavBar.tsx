@@ -35,6 +35,7 @@ const Navbar = () => {
       <nav className={navClass}>
         <NavLink end to="/" onClick={() => setShowNav(false)}>
           <svg
+            aria-label="home"
             className="nav-icon"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 576 512"
@@ -49,6 +50,7 @@ const Navbar = () => {
         >
           {' '}
           <svg
+            aria-label="about"
             className="nav-icon "
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
@@ -63,6 +65,7 @@ const Navbar = () => {
         >
           {' '}
           <svg
+            aria-label="graduate"
             className="nav-icon larger"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 640 512"
@@ -91,6 +94,7 @@ const Navbar = () => {
         >
           {' '}
           <svg
+            aria-label="envelope"
             className="nav-icon"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
@@ -107,6 +111,7 @@ const Navbar = () => {
             rel="noreferrer"
           >
             <svg
+              aria-label="github"
               className="anchor-icon"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 496 512"
@@ -122,6 +127,7 @@ const Navbar = () => {
             rel="noreferrer"
           >
             <svg
+              aria-label="linkedin"
               className="anchor-icon"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
@@ -133,6 +139,7 @@ const Navbar = () => {
         <li>
           <a href="#" rel="noreferrer" target="_blank">
             <svg
+              aria-label="c"
               className="anchor-icon c"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 384 512"
@@ -140,6 +147,7 @@ const Navbar = () => {
               <path d="M329.1 142.9c-62.5-62.5-155.8-62.5-218.3 0s-62.5 163.8 0 226.3s155.8 62.5 218.3 0c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3c-87.5 87.5-221.3 87.5-308.8 0s-87.5-229.3 0-316.8s221.3-87.5 308.8 0c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0z" />
             </svg>
             <svg
+              aria-label="v"
               className="anchor-icon"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 384 512"
@@ -150,6 +158,7 @@ const Navbar = () => {
         </li>
       </ul>
       <svg
+        aria-label="menu"
         className={showNav ? 'hamburger-icon invisible' : 'hamburger-icon'}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 448 512"
@@ -158,6 +167,7 @@ const Navbar = () => {
         <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
       </svg>
       <svg
+        aria-label="close"
         onClick={() => closeMobileNav()}
         className={showNav ? 'close-icon' : 'close-icon invisible'}
         xmlns="http://www.w3.org/2000/svg"
