@@ -12,17 +12,17 @@ const Skills = lazy(() => import('./pages/Skills/SkillsPage'));
 function App() {
   return (
     <>
-      <Suspense fallback={<Layout />}>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="*" element={<Notfound />} />
-          </Route>
-        </Routes>
-      </Suspense>
+      <Layout>
+        <Suspense fallback={<div />}>
+          <Routes>
+            <Route index element={<Home />} path="/" />
+            <Route element={<About />} path="/about" />
+            <Route element={<Contact />} path="/contact" />
+            <Route element={<Skills />} path="/skills" />
+            <Route element={<Notfound />} path="*" />
+          </Routes>
+        </Suspense>
+      </Layout>
     </>
   );
 }

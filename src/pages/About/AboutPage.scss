@@ -5,7 +5,7 @@ $color-black: #1f2937;
 $card-size: 60rem;
 
 .about-page {
-  height: 100dvh;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
 
@@ -152,7 +152,7 @@ $card-size: 60rem;
 
 @media screen and (max-width: 90em) {
   .about-page {
-    // margin-top: 10rem;
+    height: 100dvh;
 
     .about-container {
       display: flex;

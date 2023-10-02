@@ -1,10 +1,13 @@
-import { Outlet } from 'react-router-dom';
 import Navbar from '../NavBar/NavBar';
 import './Layout.scss';
-import { useEffect, useState } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 import ImageSrcContext from '../../context/ImageSrcContext';
 
-const Layout = () => {
+interface LayoutProps {
+  children: ReactNode;
+}
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   const [imageSrc, setImageSrc] = useState(
     '/assets/images/nebula_desktop.webp'
   );
@@ -31,7 +34,7 @@ const Layout = () => {
       <Navbar />
       <div className="page">
         <ImageSrcContext.Provider value={imageSrc}>
-          <Outlet />
+          {children}
         </ImageSrcContext.Provider>
       </div>
     </div>
