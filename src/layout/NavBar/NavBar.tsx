@@ -61,7 +61,7 @@ const Navbar = () => {
       </li>
       <li>
         <a
-          href="https://drive.google.com/file/d/1w4UtdDp1L1hoDT0_PfFPv0rdzMAZjx3q/view?fbclid=IwAR22ykNDz41JnxrKDaCFvI-5swB8QOzvg3MeRps4BOUJxAcJAlP0rABnKP8"
+          href="https://drive.google.com/file/d/1V9kYOI8QsKYrtSy9v81tGFWyTNotqV4X/view"
           rel="noreferrer"
           target="_blank"
         >
