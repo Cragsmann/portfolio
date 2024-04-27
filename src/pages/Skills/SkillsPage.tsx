@@ -32,9 +32,9 @@ function Skills() {
       tooltip: 'TypeScript',
     },
     {
-      logoSrc: '/assets/skills/nodeJS.webp',
-      classname: 'small',
-      tooltip: 'Node.js',
+      logoSrc: '/assets/skills/stripe.png',
+      classname: 'stripe-logo',
+      tooltip: 'Stripe',
     },
     {
       logoSrc: '/assets/skills/jest.webp',
@@ -54,9 +54,9 @@ function Skills() {
       tooltip: 'Redux',
     },
     {
-      logoSrc: '/assets/skills/redis.webp',
+      logoSrc: '/assets/skills/mapbox.png',
       classname: 'small',
-      tooltip: 'Redis',
+      tooltip: 'Mapbox',
     },
     {
       logoSrc: '/assets/skills/git.webp',
